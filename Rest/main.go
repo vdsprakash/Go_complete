@@ -61,9 +61,6 @@ func deleteArticle(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func NewArticle(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf("Hello world")
-}
 func handleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
 	myRouter.HandleFunc("/", homePage)
